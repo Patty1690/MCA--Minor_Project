@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav {
+    width: 100vw;
+    height: 5vh;
+    background-color: rgb(89, 0, 167);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60vw;
+}
+.nav i {
+    color: white;
+    text-decoration: none;
+    padding-left: 10px;
+}
+.nav1 a {
+    text-decoration: none;
+    color: white;
+}
+.nav2 a {
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+}
+
+.section1 {
+    width: 100vw;
+    height: 50vh;
+    margin-top: 2vh;
+}
+.section1 img {
+    width: 100%;
+    height: 100%;
+}
+.sec2 {
+    width: 100vw;
+    height: 40vh;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.box {
+    margin: 1vh 1vw;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box1 {
+    width: 10vw;
+    height: 20vh;
+    margin: 1vh 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    gap: 2vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.box1:hover {
+    background-color: rgb(2, 37, 44);
+    cursor: pointer;
+    color: white;
+    border: 1px solid white;
+}
+.icon1 {
+    width: 40%;
+    height: 40%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.icon1 i {
+    font-size: 200%;
+    
+}
+.para2 {
+    font-weight: bold;
+    font-size: 10px;
+    font-size: 15px;
+}
+.box2 {
+    width: 10vw;
+    height: 20vh;
+    margin: 1vh 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    gap: 2vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.box2:hover {
+    background-color: rgb(2, 37, 44);
+    cursor: pointer;
+    color: white;
+    border: 1px solid white;
+}
+.box3 {
+    width: 10vw;
+    height: 20vh;
+    margin: 1vh 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    gap: 2vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.box3:hover {
+    background-color: rgb(2, 37, 44);
+    cursor: pointer;
+    color: white;
+    border: 1px solid white;
+}
+.box4 {
+    width: 10vw;
+    height: 20vh;
+    margin: 1vh 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    gap: 2vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.box4:hover {
+    background-color: rgb(2, 37, 44);
+    cursor: pointer;
+    color: white;
+    border: 1px solid white;
+}
+.box5 {
+    width: 10vw;
+    height: 20vh;
+    margin: 1vh 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    gap: 2vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.box5:hover {
+    background-color: rgb(2, 37, 44);
+    cursor: pointer;
+    color: white;
+    border: 1px solid white;
+}
+.box6 {
+    width: 10vw;
+    height: 20vh;
+    margin: 1vh 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    gap: 2vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.box6:hover {
+    background-color: rgb(2, 37, 44);
+    cursor: pointer;
+    color: white;
+    border: 1px solid white;
+}
+.text {
+    text-align: center;
+    width: 70%;
+    margin: 5% 15%;
+}
+.text h1 {
+    padding: 1vh 0 1vh 0;
+}
+.text p {
+    padding: 1vh 0 1vh 0;
+}
+.services {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+.service1 {
+    width: 30%;
+    height: 100%;
+    border-radius: 10px;
+}
+.service1 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.service2 {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+.bx1{
+    display: flex;
+    width: 100%;
+    height: 15%;
+    gap: 5%;
+}
+.bx2{
+    display: flex;
+    width: 100%;
+    height: 15%;
+    gap: 5%;
+}
+.bx3{
+    display: flex;
+    width: 100%;
+    height: 15%;
+    gap: 5%;
+}
+.bx4{
+    display: flex;
+    width: 100%;
+    height: 15%;
+    gap: 5%;
+}
+.bx5{
+    display: flex;
+    width: 100%;
+    height: 15%;
+    background-color: rgb(202, 123, 123);
+}
+.cardio {
+    width: 15%;
+    height: 90%;
+    border: 1px solid orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.cardio img {
+    width: 50%;
+    aspect-ratio: 3/2;
+    mix-blend-mode: color-burn;
+    object-fit: contain;
+}
+.neoro {
+    width: 15%;
+    height: 90%;
+    border: 1px solid orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.neoro img {
+    width: 50%;
+    aspect-ratio: 3/2;
+    mix-blend-mode: color-burn;
+    object-fit: contain;
+}
+.gas {
+    width: 15%;
+    height: 90%;
+    border: 1px solid orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.gas img {
+    width: 50%;
+    aspect-ratio: 3/2;
+    mix-blend-mode: color-burn;
+    object-fit: contain;
+}
+.orth {
+    width: 15%;
+    height: 90%;
+    border: 1px solid orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.orth img {
+    width: 50%;
+    aspect-ratio: 3/2;
+    mix-blend-mode: color-burn;
+    object-fit: contain;
+}
+.ponco {
+    width: 15%;
+    height: 90%;
+    border: 1px solid orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.ponco img {
+    width: 50%;
+    aspect-ratio: 3/2;
+    mix-blend-mode: color-burn;
+    object-fit: contain;
+}
+.Gyno {
+    width: 15%;
+    height: 90%;
+    border: 1px solid orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.Gyno img {
+    width: 50%;
+    aspect-ratio: 3/2;
+    mix-blend-mode: color-burn;
+    object-fit: contain;
+}
+.Der {
+    width: 15%;
+    height: 90%;
+    border: 1px solid orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.Der img {
+    width: 50%;
+    aspect-ratio: 3/2;
+    mix-blend-mode: color-burn;
+    object-fit: contain;
+}
+.Opth {
+    width: 15%;
+    height: 90%;
+    border: 1px solid orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.Opth img {
+    width: 50%;
+    aspect-ratio: 3/2;
+    mix-blend-mode: color-burn;
+    object-fit: contain;
+}
+.Ped {
+    width: 15%;
+    height: 90%;
+    border: 1px solid orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.Ped img {
+    width: 50%;
+    aspect-ratio: 3/2;
+    mix-blend-mode: color-burn;
+    object-fit: contain;
+}
+.Endo {
+    width: 15%;
+    height: 90%;
+    border: 1px solid orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.Endo img {
+    width: 50%;
+    aspect-ratio: 3/2;
+    mix-blend-mode: color-burn;
+    object-fit: contain;
+}
+
+.Uro {
+    width: 15%;
+    height: 90%;
+    border: 1px solid orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.Uro img {
+    width: 50%;
+    aspect-ratio: 3/2;
+    mix-blend-mode: color-burn;
+    object-fit: contain;
+}
+.Nep {
+    width: 15%;
+    height: 90%;
+    border: 1px solid orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.Nep img {
+    width: 50%;
+    aspect-ratio: 3/2;
+    mix-blend-mode: color-burn;
+    object-fit: contain;
+}
+.Pul {
+    width: 15%;
+    height: 90%;
+    border: 1px solid orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.Pul img {
+    width: 50%;
+    aspect-ratio: 3/2;
+    mix-blend-mode: color-burn;
+    object-fit: contain;
+}
+.Rheo {
+    width: 15%;
+    height: 90%;
+    border: 1px solid orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.Rheo img {
+    width: 50%;
+    aspect-ratio: 3/2;
+    mix-blend-mode: color-burn;
+    object-fit: contain;
+}
+.Neuro {
+    width: 15%;
+    height: 90%;
+    border: 1px solid orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.Neuro img {
+    width: 50%;
+    aspect-ratio: 3/2;
+    mix-blend-mode: color-burn;
+    object-fit: contain;
+}
+
+.Rad {
+    width: 15%;
+    height: 90%;
+    border: 1px solid orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.Rad img {
+    width: 50%;
+    aspect-ratio: 3/2;
+    mix-blend-mode: color-burn;
+    object-fit: contain;
+}
+.Plas {
+    width: 15%;
+    height: 90%;
+    border: 1px solid orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.Plas img {
+    width: 50%;
+    aspect-ratio: 3/2;
+    mix-blend-mode: color-burn;
+    object-fit: contain;
+}
+.Neon {
+    width: 15%;
+    height: 90%;
+    border: 1px solid orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.Neon img {
+    width: 50%;
+    aspect-ratio: 3/2;
+    mix-blend-mode: color-burn;
+    object-fit: contain;
+}
+.Vas {
+    width: 15%;
+    height: 90%;
+    border: 1px solid orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.Vas img {
+    width: 50%;
+    aspect-ratio: 3/2;
+    mix-blend-mode: color-burn;
+    object-fit: contain;
+}
+.Psy {
+    width: 15%;
+    height: 90%;
+    border: 1px solid orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.Psy img {
+    width: 50%;
+    aspect-ratio: 3/2;
+    mix-blend-mode: color-burn;
+    object-fit: contain;
+}
+.Vas:hover, .Psy:hover, .cardio:hover , .Neuro:hover, .gas:hover, .orth:hover, .ponco:hover, .Gyno:hover, .Der:hover,.Opth:hover, .Ped:hover, .Endo:hover ,.Uro:hover , .Nep:hover , .Pul:hover ,.Rheo:hover , .neoro:hover ,.Rad:hover , .Plas:hover , .Neon:hover {
+    cursor: pointer;
+    border: 2px solid orangered;
+}
+.sec5 {
+    width: 100vw;
+    height: 40vh;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2vh;
+    background: radial-gradient(at center, rgba(157, 229, 249, 1.0), rgba(115, 152, 141, 1.0));;
+    gap: 5%;
+
+}
+.foot {
+    width: 100vw;
+    height: 5vh;
+    background-color: rgb(89, 0, 167);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+.foot1 i {
+    color: white;
+    text-decoration: none;
+    padding-left: 10px;
+}
+.foot1 a {
+    text-decoration: none;
+    color: white;
+}
+.foot2 a {
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+}
+.last1 {
+   width: 100%;
+}
+.last {
+    width: 40%;
+    padding: 1%;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: rgba(93, 199, 215, 0.641);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2% 30%;
+}
+    </style>
+
+</head>
+<body>
+    <nav class="nav">
+    <div class="nav1">
+        <i class='bx bxl-facebook'></i>
+        <i class='bx bxl-instagram' ></i>
+        <i class='bx bxl-youtube' ></i>
+        <i class='bx bxl-linkedin-square' ></i>
+    </div>
+    <div class="nav2">
+        <a href="">Privacy poilcy</a>
+        <a href="">|</a>
+        <a href="">Contact</a>
+        <a href="">|</a>
+        <a href="index.html">Register</a>
+        <a href="">|</a>
+        <a href="Login.html">Login</a>
+    </div>
+</nav>
+
+<section class="section1">
+    <img src="Images/ACC-web-Banner-Desktop-option2-03-03-2.jpg" alt="">
+</section>
+
+
+
+<section class="sec2">
+    <div class="box">
+        <div class="box1">
+            <div class="icon1">
+                <i class='bx bx-phone-call'></i>
+            </div>
+            <div class="para2">
+                Book Appointment
+            </div>
+
+        </div>
+        <div class="box2">
+            <div class="icon1">
+                <i class='bx bxs-calendar-check'></i>
+            </div>
+            <div class="para2" style="font-size: 10px;">
+                Book Health Check-Up
+            </div>
+        </div>
+        <div class="box3">
+            <div class="icon1">
+                <i class='bx bx-task'></i>
+            </div>
+            <div class="para2">
+                Consult Online
+            </div>
+        </div>
+        <div class="box4">
+            <div class="icon1">
+                <i class='bx bxs-capsule'></i>
+            </div>
+            <div class="para2">
+                Buy Medicine
+            </div>
+        </div>
+        <div class="box5">
+            <div class="icon1">
+                <i class='bx bxs-home-smile' ></i>
+            </div>
+            <div class="para2">
+                Find Hospital
+            </div>
+        </div>
+        <div class="box6">
+            <div class="icon1">
+                <i class='bx bxs-business'></i>
+            </div>
+            <div class="para2">
+                View Helth Record
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+<section class="text">
+    <h1>Explore our Centres of Clinical Excellence</h1>
+    <p>Apollo Hospitals has dedicated Centres of Excellence for several key specialties and super specialties. They are unique and state of the art facilities spread across several of the Apollo hospital locations and each Centre of Excellence stands out as a citadel of world class clinical outcomes.</p>
+    <h4>Learn about the world class health care we provide</h4>
+</section>
+
+<section class="services">
+    <div class="service1">
+        <img src="Images/pexels-jonathanborba-3259629 (1).jpg" alt="">
+    </div>
+    <div class="service2">
+        <div class="bx1">
+            <div class="cardio">
+                <img src="Images/blue-heart-cardiology-vector-removebg-preview.png" alt="">
+                Cardiology
+            </div>
+            <div class="neoro">
+                <img src="Images/download-removebg-preview.png" alt="">
+                Neorology
+            </div>
+            <div class="gas">
+                <img src="Images/main-header-desktop-768x488-removebg-preview.png" alt="">
+                Gastrology
+            </div>
+            <div class="orth">
+                <img src="Images/2089074-removebg-preview.png" alt="">
+                Orthopedic
+            </div>
+            <div class="ponco">
+                <img src="Images/OIP (2).jpg" alt="">
+                Orthopedic
+            </div>
+        </div>
+        <div class="bx2">
+            <div class="Gyno">
+                <img src="Images/gynecologist-logo-minimalist-and-abstract-illustration-free-vector-removebg-preview.png" alt="">
+                Gynocology
+            </div>
+            <div class="Der">
+                <img src="Images/OIP__3_-removebg-preview.png" alt="">
+                Dermatology
+            </div>
+            <div class="Opth">
+                <img src="Images/OIP__4_-removebg-preview.png" alt="">
+                Opthamology
+            </div>
+            <div class="Ped">
+                <img src="Images/OIP__5_-removebg-preview.png" alt="">
+                Pediatrics
+            </div>
+            <div class="Endo">
+                <img src="Images/Endocrinology-removebg-preview (1).png" alt="">
+                Endocrinology
+            </div>
+        </div>
+        <div class="bx3">
+            <div class="Uro">
+                <img src="Images/OIP__6_-removebg-preview.png" alt="">
+                Urology
+            </div>
+            <div class="Nep">
+                <img src="Images/OIP__7_-removebg-preview.png" alt="">
+                Nephrology
+            </div>
+            <div class="Pul">
+                <img src="Images/OIP__8_-removebg-preview.png" alt="">
+                Pulmonology
+            </div>
+            <div class="Rheo">
+                <img src="Images/download__1_-removebg-preview.png" alt="">
+                Rheomatology
+            </div>
+            <div class="Neuro">
+                <img src="Images/OIP__9_-removebg-preview.png" alt="">
+                Neurosurgery
+            </div>
+        </div>
+        <div class="bx4">
+            <div class="Rad">
+                <img src="Images/OIP__10_-removebg-preview.png" alt="">
+                Radiology
+            </div>
+            <div class="Plas">
+                <img src="Images/OIP__11_-removebg-preview.png" alt="">
+                Plastic Surgery
+            </div>
+            <div class="Neon">
+                <img src="Images/OIP__12_-removebg-preview.png" alt="">
+                Neontalogy
+            </div>
+            <div class="Vas">
+                <img src="Images/OIP__13_-removebg-preview.png" alt="">
+                Vascular Surgery
+            </div>
+            <div class="Psy">
+                <img src="Images/OIP__14_-removebg-preview.png" alt="">
+                Psyciatric
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+
+<section class="sec5">
+    <div class="today">
+        <h1>What you like to do today</h1>
+    </div>
+    <div class="box">
+        <div class="box1">
+            <div class="icon1">
+                <i class='bx bx-phone-call'></i>
+            </div>
+            <div class="para2">
+                Book Appointment
+            </div>
+
+        </div>
+        <div class="box2">
+            <div class="icon1">
+                <i class='bx bxs-calendar-check'></i>
+            </div>
+            <div class="para2" style="font-size: 10px;">
+                Book Health Check-Up
+            </div>
+        </div>
+        <div class="box3">
+            <div class="icon1">
+                <i class='bx bx-task'></i>
+            </div>
+            <div class="para2">
+                Consult Online
+            </div>
+        </div>
+        <div class="box4">
+            <div class="icon1">
+                <i class='bx bxs-capsule'></i>
+            </div>
+            <div class="para2">
+                Buy Medicine
+            </div>
+        </div>
+        <div class="box5">
+            <div class="icon1">
+                <i class='bx bxs-home-smile' ></i>
+            </div>
+            <div class="para2">
+                Find Hospital
+            </div>
+        </div>
+        <div class="box6">
+            <div class="icon1">
+                <i class='bx bxs-business'></i>
+            </div>
+            <div class="para2">
+                View Helth Record
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+<footer class="foot">
+    <div class="copy">
+        © Copyright 2024. Apollo Hospitals Group. All Rights Reserved.
+    </div>
+    <div class="foot1">
+        <i class='bx bxl-facebook'></i>
+        <i class='bx bxl-instagram' ></i>
+        <i class='bx bxl-youtube' ></i>
+        <i class='bx bxl-linkedin-square' ></i>
+    </div>
+    <div class="foot2">
+        <a href="">Privacy poilcy</a>
+        <a href="">|</a>
+        <a href="">Disclaimer</a>
+        <a href="">|</a>
+        <a href="">Contact</a>
+        <a href="">|</a>
+        <a href="">Login</a>
+    </div>
+</footer>
+
+<footer class="last">
+    <div class="last1">
+    Our share price October 7, 2024 ↑BSE Closing: 6750.00↓ NSE Closing: 6773.15
+</div>
+</footer>
+</body>
+</html>

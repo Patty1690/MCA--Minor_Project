@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .full {
+            background: linear-gradient(229deg, rgba(2,0,36,1) 0%, rgba(190,224,230,1) 73%, rgba(9,121,97,1) 100%);
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            width: 60vw;
+            height: 70vh;
+            border-radius: 10px;
+            border: 1px solid black;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+        }
+        .blue {
+            background-color: rgb(89, 0, 167);
+            width: 50%;
+            height: 100%; 
+            overflow: hidden;
+            border-radius: 0 100px 100px 0;
+            text-align: center;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .white {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10%;
+            width: 50%;
+            height: 100%;
+        }
+        .glow-on-hover {
+            width: 220px;
+            height: 50px;
+            border: none;
+            outline: none;
+            color: #fff;
+            background: #111;
+            cursor: pointer;
+            position: relative;
+            z-index: 0;
+            border-radius: 10px;
+        }
+        .glow-on-hover:before {
+            content: '';
+            background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            background-size: 400%;
+            z-index: -1;
+            filter: blur(5px);
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            animation: glowing 20s linear infinite;
+            opacity: 0;
+            transition: opacity .3s ease-in-out;
+            border-radius: 10px;
+        }
+        .glow-on-hover:hover:before {
+            opacity: 1;
+        }
+        @keyframes glowing {
+            0% { background-position: 0 0; }
+            50% { background-position: 400% 0; }
+            100% { background-position: 0 0; }
+        }
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 2% 5%;
+            border-radius: 4px;
+            border: 1px solid black;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="full">
+        <div class="container">
+            <div class="blue">
+                <h1>Hello, Friend!</h1>
+                <h3>Register with your personal details to use all site features</h3>
+            </div>
+            <div class="white">
+                <h1>Sign In</h1>
+                <div class="icon">
+                    <i class='bx bxl-google-plus'></i>
+                    <i class='bx bxl-facebook'></i>
+                    <i class='bx bx-headphone'></i>
+                    <i class='bx bxl-linkedin'></i>
+                </div>
+                <div class="or">Or use your email password</div>
+                <div class="input">
+                    <form action="Register" method="POST">
+                        <input type="text" id="name" name ="name" placeholder="Name" required><br>
+                        <input type="text" id="email" name="email" placeholder="Email" required><br>
+                        <input type="password" id="password" name="pass" placeholder="Password" required><br>
+                        <input type="submit" value="Register" class="glow-on-hover"><br>
+                        <a href="index.html"><button type="button" class="glow-on-hover">Sign In</button></a>
+                    </form>    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
